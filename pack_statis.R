@@ -1,30 +1,15 @@
-## Methode STATIS
+# Développement du packkage de l'approche STATIS qui est une méthode de classification multibloc
 
-#------------- Les library
+#------------- Les librarys necessaires
 
-#library(ggplot2)
-#library(gplots)
 library(dplyr)
-library(haven)
-library(readxl)
 library(diceR)
-library(dplyr)
-library(pander)
 library(MatrixCorrelation)
-library(questionr)
-library(rlist)
 library(FactoMineR)
 library(MASS)
-library(corrplot)
 library(cluster) 
-library(factoextra)
 library(NMF)
-library(fossil)#Pour le calcul de l'indice de rand
-library(RcppCNPy)
-#library(NANIAR)
 library(visdat)
-library(tidyverse)
-library(zoo)
 
 ##Définiton de la fonction trace et de la fonction de RV
 
@@ -92,7 +77,7 @@ calcul_W <- function(X){
   
 }
 
-# Calcul de W_i
+## Calcul des poids W_i
 
 Calcul_Wi <- function(X){
   
@@ -106,7 +91,7 @@ Calcul_Wi <- function(X){
 
 }
 
-#calcul de rv pour une liste de tableau donnée
+## Calcul de RV entre les tableaux pour une liste de tableau donnée
 
 calcul_RV <- function(X){
   
